@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb1/0</title>
+    <script>
+        function onn(){
+          let b = document.getElementById("Bulb") ;
+          b.src="onn.jpg";
+
+        }
+        function off(){
+            let b = document.getElementById("Bulb") ;
+          b.src="off.jpg";
+        }
+        function sty(){
+            document.getElementById("tagline").style.color="red";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="tagline">here is the bulb images to on off </h1>
+    <button onclick="off()">Turn Off</button> 
+    <img src="off.jpg" id="Bulb" style="width: 200px; height:100px"/>
+    <button onclick="onn()">Turn On</button>
+    <button onclick="sty()">color</button>
+    
+</body>
+</html>
