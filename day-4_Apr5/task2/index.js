@@ -31,3 +31,36 @@ person.newvar=90;
 console.log(person);
 console.log(person['nameall']);
 
+// function iinside the object
+const std ={
+     name:"Ashish",
+     age:"23",
+     showIntrest: function(){
+            console.log(this.age,std.age);
+     }
+};
+
+std.showIntrest();
+
+//assign the previous object values to new one
+// const stdCpy = new std();
+// console.log(stdCpy);
+
+
+//nested objects
+const nst  = {
+    f_name:"ram",
+    l_name:"singh",
+    son : {
+        s_name:"Ashu",
+        age:30
+    },
+    show:function(){
+            console.log("show-fun-->>>",this.f_name,this.son.age);
+    }
+};
+
+console.log(nst.f_name);
+console.log(nst.son);
+console.log(nst.son.age);
+nst.show();
