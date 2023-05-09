@@ -31,7 +31,7 @@ person.newvar=90;
 console.log(person);
 console.log(person['nameall']);
 
-// function iinside the object
+// ==================function iinside the object
 const std ={
      name:"Ashish",
      age:"23",
@@ -42,7 +42,7 @@ const std ={
 
 std.showIntrest();
 
-//assign the previous object values to new one
+//===============assign the previous object values to new one
 // const stdCpy = new std();
 // console.log(stdCpy);
 
@@ -59,8 +59,55 @@ const nst  = {
             console.log("show-fun-->>>",this.f_name,this.son.age);
     }
 };
-
+console.log(nst)
 console.log(nst.f_name);
 console.log(nst.son);
 console.log(nst.son.age);
-nst.show();
+ nst.show();
+
+const add = {
+    name:'ashishs',
+    class:'4th',
+    additon:function(a,b){
+        console.log("addition is performed==>>>",this.class,add.class)
+        return a+b;
+    }
+};
+console.log(add);
+console.log(add.additon(5,"ashu"));
+
+//========================Add property to a obj
+add.sec='A';
+console.log(add);
+
+//========================del an property to obj
+ delete add.sec;
+// oR
+// ===================delete add['sec'];
+console.log(add);
+
+let a='ashu';
+
+switch(a){
+    case 1:
+        console.log('one')
+    break;
+    case 'ashu':
+        console.log('two')
+    break;
+    case 3:
+        console.log('three')
+    break;
+    case 4:
+        console.log('four')
+    break;
+    case 5:
+        console.log('five')
+    break;
+    case 6:
+        console.log('six')
+    break;
+    default:
+        console.log("no number")
+    break;
+}
