@@ -53,6 +53,11 @@ const newp2 = document.createElement('p')
 newp2.innerText='new wala p2 tag';
 newp.appendChild(newp2);
 
+    // const j = document.createElement('h1');
+    // j.innerText="hii";
+    // const k = document.createElement('p');
+    // k.innerText="guyes";
+
 for(let i=0;i<qsA.length;i++){
     const j = document.createElement('h1');
     j.innerText="hii";
@@ -64,5 +69,28 @@ for(let i=0;i<qsA.length;i++){
 }
 
 // to add an class in html ele
-const addClass = document.getElementById('h1');
-addClass.classList.add("myName","mySec");
+const addClass11122 = document.getElementById('h1');
+addClass11122.classList.add("myName","mySec");
+
+const getAllClass = document.querySelectorAll(".h1kptags");
+console.log(getAllClass);
+
+const colorArr = ['red','green','blue','grey'];
+
+for(let i=0;i<getAllClass.length;i++)
+{
+    getAllClass[i].style.backgroundColor=colorArr[i];
+}
+
+const names = ['Ashish','Ruchika','Priya','Riya'];
+const clor = ['orange','pink','yellow','red'];
+
+for(let i=0;i<names.length;i++)
+{
+    const elecreate = document.createElement('p');
+    elecreate.innerText=names[i];
+    elecreate.style.color=clor[i];
+    elecreate.style.backgroundColor=clor[names.length-i-1];
+    const b = document.querySelector('h1');
+    b.appendChild(elecreate);
+}
