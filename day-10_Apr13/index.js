@@ -25,26 +25,112 @@
 // console.log("line.....13 printed");
 // console.log("line.....14 printed");
 
-const dat = fetch('https://reqres.in/api/users');
+// const dat = fetch('https://reqres.in/api/users');
 
-dat
-.then(data => data.json())
-.then(result => {
-    const userArr = result.data
+// dat
+// .then(data => data.json())
+// .then(result => {
+//     const userArr = result.data
 
-    for(let i=0;i<userArr.length;i++)
-    {
-        // console.log(userArr[i]);
-        // const ptag = document.createElement('p');
-        // ptag.innerText=userArr[i].email;
+//     for(let i=0;i<userArr.length;i++)
+//     {
+//         // console.log(userArr[i]);
+//         // const ptag = document.createElement('p');
+//         // ptag.innerText=userArr[i].email;
 
-        const spantag = document.createElement('span');
-        spantag.innerText=`
-        ${userArr[i].id}, ${userArr[i].first_name}, ${userArr[i].last_name}, ${userArr[i].email}`;
+//         const spantag = document.createElement('span');
+//         spantag.innerText=`
+//         ${userArr[i].id}, ${userArr[i].first_name}, ${userArr[i].last_name}, ${userArr[i].email}`;
 
-        const h1tag = document.querySelector('h1');
-        h1tag.append(spantag);
-    }
+//         const h1tag = document.querySelector('h1');
+//         h1tag.append(spantag);
+//     }
+// })
+
+// .catch(error => console.log("failed",error));
+
+
+const passengers = [];
+
+function addPassengers(item){
+    if(passengers.length===4)
+    console.log("i'm full tyr again later");
+    else
+    passengers.push(item);
+}
+addPassengers({
+    name:'ashish',
+    source:'x',
+    destini:'y',
+    trainNo:1
 })
+addPassengers({
+    name:"ruchika",
+    source:'x',
+    destini:'y',
+    trainNo:2
+})
+addPassengers({
+    name:"priya",
+    source:'x',
+    destini:'y',
+    trainNo:1
+})
+addPassengers({
+    name:"tanu",
+    source:'x',
+    destini:'y',
+    trainNo:2
+})
+addPassengers({
+    name:"pallavi",
+    source:'x',
+    destini:'y',
+    trainNo:1
+})
+console.log(passengers);
 
-.catch(error => console.log("failed",error));
+// function deletePassengers(Name){
+//     for(let i=0;i<4;i++)
+//     {
+//        if(passengers[i].name === Name){
+//         // passengers.slice(passengers[i],1);
+//         console.log('uudhudw',passengers.splice(passengers[i],1))
+//        }
+//     }
+
+// }
+// deletePassengers(prompt("name"));
+// console.log(passengers);
+
+function checkNumberOfPassengers(trainNnm){
+    let counter = 0;
+    for(let i=0;i<passengers.length;i++)
+    {
+        if(passengers[i].trainNo === trainNnm)
+        {
+            counter++;
+        }
+        
+    }
+    console.log("number of passengers in train",trainNnm ,"is -",counter)
+}
+checkNumberOfPassengers(2);
+
+function secarchAll(trainNum){
+    for(let i=0; i<4; i++)
+    {
+        if(passengers[i].trainNo === trainNum)
+        console.log(passengers[i]);
+    }
+}
+secarchAll(2);
+
+function detailsAll(){
+    for(let i=0;i<4;i++)
+    {
+       console.log(passengers[i]) ;
+    }
+}
+
+detailsAll();
