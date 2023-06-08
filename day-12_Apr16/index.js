@@ -126,52 +126,58 @@
 
 // // btn.addEventListener("click",alterText);
 
-// const getPassword = document.getElementById("inputfeild");
+const getPassword = document.getElementById("inputfeild");
 
-// const getShow = document.getElementById("btnShow");
-// const getHide = document.getElementById("btnHide");
+const getShow = document.getElementById("btnShow");
+const getHide = document.getElementById("btnHide");
 
-// getShow.addEventListener("click",show);
-// getHide.addEventListener("click",hide);
+getShow.addEventListener("click",show);
+getHide.addEventListener("click",hide);
 
-// function hide(){
-//     getPassword
-// }
-
-// function show(){
-//     getPassword
-// }
-
-// console.log(getPassword.value);
-
-
-const imgtag = document.getElementById("imageTag");
-
-const image = document.createElement("img");
-image.src="https://www.shutterstock.com/image-photo/portrait-family-friends-on-hiking-260nw-1102115744.jpg";
-// image.style.width="200px";
-
-const btns1 = document.createElement("button");
-btns1.id="btnFamily";
-btns1.innerText="Family";
-
-const btns2 = document.createElement("button");
-btns2.id="btnFriends";
-btns2.innerText="Friends";
-
-
-imgtag.append(image, btns1,btns2);
-
-btns1.addEventListener("click",family);
-btns2.addEventListener("click",friends);
-
-function friends()
-{
-    image.src="https://media.istockphoto.com/id/1321196688/photo/group-multiracial-friends-taking-selfie-with-mobile-smartphone-outdoor-happy-mixed-race.webp?b=1&s=170667a&w=0&k=20&c=J5lmp_enLFZfG8pt736JQVsoKKd-uLb430rd1OFC1So=";
-
+function hide(){
+    getPassword.type ="password";
 }
-function family()
-{
-    image.src="https://www.shutterstock.com/image-photo/portrait-family-friends-on-hiking-260nw-1102115744.jpg";
 
+function show(){
+    getPassword.type = "text";
 }
+
+console.log(getPassword.value);
+
+
+
+
+
+
+
+
+// const imgtag = document.getElementById("imageTag");
+
+// const image = document.createElement("img");
+// image.src="https://www.shutterstock.com/image-photo/portrait-family-friends-on-hiking-260nw-1102115744.jpg";
+// // image.style.width="200px";
+
+// const btns1 = document.createElement("button");
+// btns1.id="btnFamily";
+// btns1.innerText="Family";
+
+// const btns2 = document.createElement("button");
+// btns2.id="btnFriends";
+// btns2.innerText="Friends";
+
+
+// imgtag.append(image, btns1,btns2);
+
+// btns1.addEventListener("click",family);
+// btns2.addEventListener("click",friends);
+
+// function friends()
+// {
+//     image.src="https://media.istockphoto.com/id/1321196688/photo/group-multiracial-friends-taking-selfie-with-mobile-smartphone-outdoor-happy-mixed-race.webp?b=1&s=170667a&w=0&k=20&c=J5lmp_enLFZfG8pt736JQVsoKKd-uLb430rd1OFC1So=";
+
+// }
+// function family()
+// {
+//     image.src="https://www.shutterstock.com/image-photo/portrait-family-friends-on-hiking-260nw-1102115744.jpg";
+
+// }
