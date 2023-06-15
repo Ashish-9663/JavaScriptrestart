@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="container" id="contaiiner">
+        <div class="child1 child">
+            <div class="child1Left">Flipkart</div>
+            <div class="child1Mid">
+                <input type="text" placeholder="search for products, brand and more" id="searchInput">
+                <button id="searchBtn">search</button>
+            </div>
+            <div class="child1Right">
+                <ul>
+                    <li>User</li>
+                    <li>Become a Seller</li>
+                    <li>More</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+        <div class="child2 child">
+            <ul>
+                <li>Electronics</li>
+                <li>TV & Appliances</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Baby & Kids</li>
+                <li>Home & Furniture</li>
+                <li>Sports, Books & More</li>
+                <li>Flights</li>
+                <li>Offer Zone</li>
+                <li>Grocery</li>
+            </ul>
+        </div>
+        <div class="child3 child">
+            <div class="child3Container">
+                <div class="child3Left">
+                    <div class="child3LeftHeading"><h3>Filter</h3></div>
+                    <div class="child3LeftInner1">
+                        <h4>Order Status</h4>
+                        <ul>
+                            <div class="groupCheckbox">
+                                <label for="item1">On The Way</label>
+                                <li><input type="checkbox" id="item1"></li>
+                            </div>
+                            <div class="groupCheckbox">
+                                <label for="item2">Delivered</label>
+                                <li><input type="checkbox" id="item2"></li>
+                            </div>
+                            <div class="groupCheckbox">
+                                <label for="item3">Cancelled</label>
+                                <li><input type="checkbox" id="item3"></li>
+                            </div>
+                            <div class="groupCheckbox">
+                                <label for="item4">Returned</label>
+                                <li><input type="checkbox" id="item4"></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="child3LeftInner2">
+                        <h4>Order Time</h4>
+                        <ul>
+                            <div class="groupCheckbox">
+                                <label for="item1">Last 30 days</label>
+                                <li><input type="checkbox" id="item1"></li>
+                            </div>
+                            <div class="groupCheckbox">
+                                <label for="item2">2020</label>
+                                <li><input type="checkbox" id="item2"></li>
+                            </div>
+                            <div class="groupCheckbox">
+                                <label for="item3">2019</label>
+                                <li><input type="checkbox" id="item3"></li>
+                            </div>
+                            <div class="groupCheckbox">
+                                <label for="item4">Older</label>
+                                <li><input type="checkbox" id="item4"></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="child3Right">
+                <div class="childRightTop">
+                        <div class="searchOlderOrder">
+                            <input type="text"  id="searchBoxOlder" placeholder="search your older orders here">
+                            <button id="searchOrderBtn">Search Orders</button>
+                        </div>
+                        <h3 style="padding-top:30px;">Are you looking for these orders?</h3>
+                        <div class="olderItems">
+                            <div class="itemImagetag">
+                                <img src="" alt="itemImage">
+                            </div>
+                            <div class="itemDetails"> 
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequuntur perspiciatis quas rem optio accusantium?</h6>
+                            </div>
+                        </div>
+                </div>
+                <div class="childRightBottom">
+                        <div class="card"></div>
+                        <div class="card"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
