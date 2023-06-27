@@ -1,0 +1,141 @@
+/* b2651f6d--ID   CDC2AE
+
+0449470caa987615672c18fb2de9796d	--- appKey */
+
+/* https://api.edamam.com/search?q=${paneer}&app_id=${b2651f6d}&app_key=${0449470caa987615672c18fb2de9796d}&type=public */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.headSection{
+  width:auto;
+  height: 20%;
+  background-color: #ECE5C7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.name{
+    color: #116A7B;
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+.searchBoxcontainer
+{
+    border: 2px solid rgb(167, 167, 167);
+    text-align: right;
+    width: fit-content;
+    background-color: #116A7B;
+    width: 35%;
+    height: 25%;
+    position: relative;
+    border-radius:2px;
+}
+.searchBoxcontainerOnClick{
+    border: 2px solid rgb(0, 102, 255);
+    transition-delay: 0.2s;
+    transform-origin: top;
+    transform-box: radial;
+    border-radius:2px ;
+}
+.inputBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 90%;
+    height: 100%;
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding: 5px;
+    letter-spacing: 1.5px;
+}
+.inputBox:focus{
+    outline: none;
+    
+}
+.searchBtn{
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   width: 10%;
+   height: 100%;
+   background-color: transparent;
+   border: none;
+}
+i{
+    font-size: 20px;
+}
+
+.mainsection{
+    width:100%;
+    height: 80%;
+    background-color: #C2DEDC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: stretch;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.newDiv{
+    width: 15%;
+    /* height: 50%; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-start;
+    align-content: center;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    background-color:#dfd4a7;
+}
+.cardImage{
+    width: 100%;
+    /* height: 70%; */
+    padding: 5px;
+}
+.cardDishImage{
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 5px 5px 0 0;
+}
+.cadrDetails{
+    width: 100%;
+    /* height:max-content; */
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    color:#116A7B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; 
+}
+.nameDish{
+    width: 100%;
+    padding: 5px; 
+    border-bottom: 2px solid #fefefe; 
+    margin-bottom: 5px;  
+}
+.info{
+    width: 100%;
+    padding: 5px; 
+    border-bottom: 2px solid #fefefe; 
+}
+.noDataClass{
+    font-size: x-large;
+    
+}

@@ -41,7 +41,7 @@
 #imagetag{
     width: 50%;
     border-radius: 150px;
-    background-color: orange;
+    box-shadow: 10px -4px 0px rgb(5, 155, 201);
 }
 .name{
     letter-spacing: 3px;
