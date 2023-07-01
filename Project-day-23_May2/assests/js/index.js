@@ -34,7 +34,7 @@
 //   });
 
 // https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=24&key=[YOUR_API_KEY] 
-fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=24&key=AIzaSyBH-VwBnuuLCVmTHC8mEZGjD5eu9wgJMqQ")
+fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=24&key=AIzaSyBxs1jbcHTaKiOYZNjRVf754Ye7FjUh94Y")
     .then(res => { return res.json() })
     .then(data => {
         const videoArr = data.items;
@@ -71,6 +71,7 @@ fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDe
             
             const divOuter = document.createElement("div");
             divOuter.classList.add("card");
+            divOuter.classList.add("my-2");
             divOuter.append(imgRef, divRef);
             divOuter.style.width = "18rem";
 

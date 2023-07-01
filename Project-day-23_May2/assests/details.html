@@ -14,93 +14,42 @@
 </head>
 
 <body>
-    <nav>
-
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/play.png" alt="" width="30px"  height="30px" 
+                    class="d-inline-block align-text-top">
+                VizOcean</a>
+            <form class="d-flex" action="./search.html">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q" id="searchInput">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
     </nav>
+    
     <section class="mt-4 px-4">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BtQp2U6hJII"
+                    <iframe width="560" height="315"  id="player_iframe"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
                 <div class="col">
-                    <h3>video title..</h3>
-                    <h5>Chanel name</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatem vel sequi nemo,
-                        eaque laborum. Cum, deserunt quo et consequuntur magnam aspernatur illum nam placeat odit
-                        dolores cupiditate commodi explicabo?</p>
-                    <p>Views: 10000 &emsp;&emsp; Likes: 500 </p>
+                    <h3 id="title"></h3>
+                    <h5 id="chanelName"></h5>
+                    <p id="description" style="max-height: 12rem; overflow-y:scroll;"></p>
+                    <p >Views: <span id="views"></span> &emsp;&emsp; Likes: <span id="likes"></span> </p>
                 </div>
             </div>
         </div>
 
         <div class="container mt-4">
-            <div class="hstack gap-3 " style="overflow-x: scroll;">
-                <div class="card" style="min-width:18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-
-                <div class="card" style="min-width:18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-
-                <div class="card" style="min-width:18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                <div class="card" style="min-width:18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                <div class="card" style="min-width:18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                <div class="card" style="min-width:18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                <div class="card" style="min-width:18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                <div class="card" style="min-width:18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                <div class="card" style="min-width:18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-                <div class="card" style="min-width:18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
+            <h4>Suggestions</h4>
+            <div id ="suggestionsList_videos" class="hstack gap-3 " style="overflow-x: scroll; align-items: flex-start;">
+                
             </div>
         </div>
     </section>
