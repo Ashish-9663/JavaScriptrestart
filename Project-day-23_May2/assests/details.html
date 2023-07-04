@@ -31,11 +31,11 @@
     <section class="mt-4 px-4">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <iframe width="560" height="315"  id="player_iframe"
+                <div class="col" id="player_iframe">
+                    <!-- <iframe width="560" height="315"  id="player_iframe"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        allowfullscreen></iframe> -->
                 </div>
                 <div class="col">
                     <h3 id="title"></h3>
@@ -52,10 +52,39 @@
                 
             </div>
         </div>
-    </section>
+    </section >
+    
     <footer>
-
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                  <img src="./images/play.png" style="height: 2rem;" />
+                </a>
+                <span class="text-muted">© ashish and teams</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                  <a class="text-muted" href="https://github.com" target="_blank">
+                    <img src="./images/github.png" style="height: 1rem;" />    
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="text-muted" href="https://instagram.com" target="_blank">
+                    <img src="./images/instagram.png" style="height: 1rem;" />    
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="text-muted" href="https://www.twitter.com/" target="_blank">
+                    <img src="./images/twitter.png" style="height: 1rem;" />
+                  </a>
+                </li>
+              </ul>
+            </footer>
+          </div>
     </footer>
+    
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="./js/details.js"></script>
 

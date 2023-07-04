@@ -1,5 +1,5 @@
 
-const Api_Key = "AIzaSyBxs1jbcHTaKiOYZNjRVf754Ye7FjUh94Y";
+const Api_Key = "AIzaSyDAPaNMjPcUVe1LUvkvFP-q3YBgB0C6QrQ";
 
 const url = window.location.href;
 
@@ -27,17 +27,18 @@ function repData(search_data) {
     const thumbnails = e.snippet.thumbnails.high.url;
     const upload_data = e.snippet.publishedAt;
     const video_id = e.id.videoId;
+    console.log(video_id);
 
     const htmlContaint =`
     <div class="card " >
       <div class="row g-0">
-        <div class="col-md-3">
-          <img class ="img-fluid rounded-start" src= ${thumbnails} />
+        <div class="col-md-3 col-sm-5" style="display: flex; justify-content: center; align-items: center; background-color: #000000;"><a href="details.html?id=${video_id}">
+          <img class ="img-fluid rounded-start" src= ${thumbnails} /></a>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 col-sm-7 ">
           <div class="card-body">
-          <a href="detail.html?id"${video_id}></a>
-            <h5 class="card-title">${title}</h5>
+          <a href="details.html?id=${video_id}">
+            <h5 class="card-title">${title}</h5></a>
             <h6 class="card-title">${channel_name}</h6>
             <p class="card-text">${description}</p>
             <p class="card-text"><small class="text-muted">${upload_data}</small></p>
