@@ -14,25 +14,27 @@
     margin: 0px;
     padding-top: 15px;
 }
-.card:hover{
+.card2:hover{
     z-index: 9999;
     transform: scale(1.07);
-    /* border: 1px solid black; */
+    transform:all 5s;
+    border-radius: 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.card{
-    transform: all 0.5s;
+.card2{
+    transform:border 10s;
+    border-radius: 10px;
 }
 .mini_player{
     display: none;
     width:100%;
-    transform: all 0.5s;
+    
 }
-.card:hover .mini_player{
+.card2:hover .mini_player{
     display: initial;
-    transform: all 0.5s;
+    
 }
-.card:hover .card-img-top{
+.card2:hover .card-img-top{
     display: none;
-    transform: all 0.5s;
+    
 }

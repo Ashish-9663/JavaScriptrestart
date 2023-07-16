@@ -53,8 +53,8 @@ fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDe
             divRef.append(channel_logo,textDiv);
 
             const imgRef = document.createElement("img");
-            imgRef.classList.add("card-img-top");
-            imgRef.style.borderRadius="15px";
+            imgRef.classList.add("card-img-top","card2");
+            // imgRef.style.borderRadius="15px";
             imgRef.src = thumbnails;
 
             const iframe_ele =document.createElement("iframe");
