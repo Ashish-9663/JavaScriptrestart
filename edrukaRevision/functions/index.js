@@ -161,14 +161,38 @@ const diameter = function(radius){
 
 //>>>>we can add method to arrays
 //>>>>we con customize any func same 
-  Array.prototype.calci = function(logic){
-      const output=[];
-      for(let i=0;i<this.length;i++){
-        output.push(logic(this[i]));
-      }
-      return(output);
-    }
+  // Array.prototype.calci = function(logic){
+  //     const output=[];
+  //     for(let i=0;i<this.length;i++){
+  //       output.push(logic(this[i]));
+  //     }
+  //     return(output);
+  //   }
     
-    console.log(arr.calci(area));
-    console.log(arr.calci(circumfrence));
-    console.log(arr.calci(diameter));
+  //   console.log(arr.calci(area));
+  //   console.log(arr.calci(circumfrence));
+  //   console.log(arr.calci(diameter));
+
+  function claculator(l){
+    return function(b){
+      return function(h){
+        console.log( l*b*h);
+      }
+    }
+  }
+
+  // console.log(claculator(2)(3)(4));
+  // let myNew = claculator(2);
+  // let mynew2 = myNew(3);
+  // mynew2(4);
+  
+// function multiply(x,y){
+//   console.log(x*y);
+// }
+const multiply = function(x,y,z){
+  console.log(x*y*z);
+}
+const mulbyTwo=multiply.bind(this,2);
+console.log(mulbyTwo)
+const mul3 = mulbyTwo.bind(this,5);
+mul3(3);
